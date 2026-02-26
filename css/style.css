@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@100..900&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", serif;
+    color: #333;
+}
+
+img {
+    max-width: 250px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.logo{
+    font-family: "Pacifico", cursive;
+}
+
+header {
+    background-color: rgb(255, 190, 226);
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+}
+
+#main-menu ul{
+    display: flex;
+    gap: 4rem;
+    margin: 1rem;
+}
+
+#main-menu a{
+    padding: 0.5rem 1.5rem;
+    transition: 0.3s;
+    border-radius: 5rem;
+    background-color: rgb(255, 190, 226);
+    border: #333 solid 2px;
+    color: #333;
+}
+
+#main-menu a:hover{
+    background-color: #fff;
+    color: #333;
+}
+
+#main-content{
+    display: flex;
+    margin: 5rem auto;
+    gap: 4rem
+}
+
+#articles {
+    flex: 3;
+}
+
+#articles-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+#sidebar {
+    flex: 1;
+}
+
+.article-card {
+    width: 30%;
+    flex-grow: 1;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow:10px 5px 5px #ccc;
+    background-color: #f9f9f9;
+    border: rgb(255, 190, 226) solid 3px;
+}
+
+.article-card img {
+    max-width: 100%;
+    aspect-ratio: 12 / 10;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+.article-content {
+    margin: 1rem 1rem 2rem 1rem;
+    
+}
+
+.article-header{
+    margin-top: 1rem;
+    margin-bottom: 20px;
+}
+
+.read-more{
+    padding: 0.5rem 1rem;
+    transition: 0.3s;
+    border-radius: 5rem;
+    background-color: rgb(255, 190, 226);
+    border: #333 solid 2px;
+    color: #333;
+}
+
+.read-more:hover{
+    background-color: #fff;
+    color: #333;
+}
+
+#sidebar {
+    margin-top: 5.5rem;
+}
+
+.sidebar-card {
+    box-shadow:10px 5px 5px #ccc;
+    border: rgb(255, 190, 226) solid 3px;
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background-color: #f9f9f9;
+}
+
+.video-title {
+    font-family: "Montserrat", serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.video {
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+}
+
+.video iframe {
+    width: 100%;
+    aspect-ratio:  9 / 16;
+    height: auto;
+}
+
+footer {
+    background-color: rgb(255, 190, 226);
+    padding: 4rem 0 2rem 0;
+}
+
+#footer-links i{
+    width: 2rem;
+    height: 2rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+#footer-links{
+    display: flex;
+    gap: 2rem;
+    font-size: 2rem;
+    justify-content: center;
+}
+
+#copyrights{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.article{
+    max-width: 60%;
+}
+
+#article-recipe li{
+    list-style-type: decimal;
+}
+
+#article-review{
+    margin-bottom: 1rem;
+}
+
+#article-body img{
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.recipe-video {
+    border-radius: 1rem;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin-top: rem
+}
+
+.recipe-video iframe {
+    width: 100%;
+    aspect-ratio:  16 / 9;
+    height: auto;
+}
+
+#about-text{
+    display: flex;
+    justify-content: center;
+}
+
+#text{
+    max-width: 40%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+#text p, h3{
+    margin-bottom: 1rem;
+}
+
+#text li{
+    list-style-type:disc;
+}
+
+
+#mission ul{
+    max-width: 60%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 30px;
+}
+
+/* Agrupa Label + Input/Textarea */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Caixas de texto e áreas de mensagem */
+.form-group input, 
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 1rem;
+}
+
+/* Quando o usuário clica para digitar, a borda fica amarela */
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: rgb(255, 190, 226);
+}
+
+/* Estilo para o botão de enviar mensagem */
+.contact-form .read-more {
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+    width: fit-content; /* O botão só tem a largura do texto interno */
+}
+
+/* --- TABELA DE ESPECIFICAÇÕES TÉCNICAS --- 
+*/
+
+.specs-container {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+/* Título 'Ficha Técnica' com uma barra decorativa amarela ao lado */
+.specs-container h3 {
+    margin-bottom: 1.5rem;
+    border-left: 5px solid rgb(255, 190, 226);
+    padding-left: 10px;
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse; /* Remove espaços duplos entre as bordas das células */
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Sombra leve para dar profundidade */
+}
+
+.specs-table td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+}
+
+/* Efeito Zebra: Pinta as linhas pares (even) de cinza claro para facilitar a leitura */
+.specs-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Estiliza a primeira coluna (ex: 'Processador', 'Memória') para ser mais escura e forte */
+.specs-table td:first-child {
+    font-weight: 500;
+    color: #555;
+    width: 50%;
+}
+
