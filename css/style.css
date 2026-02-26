@@ -232,7 +232,7 @@ footer {
 }
 
 #text{
-    max-width: 40%;
+    max-width: 60%;
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
@@ -349,6 +349,10 @@ footer {
     #main-content{
         gap: 2rem;
     }
+    
+    #text{
+        max-width: 70%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -366,5 +370,8 @@ footer {
     }
     #sidebar{
         align-self: center;
+    }
+    #text{
+        max-width: 80%;
     }
 }
