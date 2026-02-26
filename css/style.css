@@ -333,3 +333,38 @@ footer {
     width: 50%;
 }
 
+@media (max-width: 1024px) {
+    #header{
+        flex-direction: column;
+    }
+
+    #main-menu ul{
+        gap: 2rem;
+    }
+
+    #articles-items{
+        gap: 3rem;
+    }
+
+    #main-content{
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #main-menu a{
+        padding: 0.5rem 0.5rem;
+    }
+    #main-menu ul{
+        gap: 1rem;
+    }
+    #main-content{
+        flex-direction: column;
+    }
+    .video iframe {
+    aspect-ratio:  16 / 9;  
+    }
+    #sidebar{
+        align-self: center;
+    }
+}
