@@ -72,10 +72,10 @@ header {
 #main-content{
     display: flex;
     margin: 5rem auto;
-    gap: 4rem
+    gap: 4rem;
 }
 
-#articles {
+#articles{
     flex: 3;
 }
 
@@ -257,7 +257,7 @@ footer {
     padding-right: 30px;
 }
 
-/* Agrupa Label + Input/Textarea */
+
 .form-group {
     display: flex;
     flex-direction: column;
@@ -270,7 +270,7 @@ footer {
     color: #555;
 }
 
-/* Caixas de texto e áreas de mensagem */
+
 .form-group input, 
 .form-group textarea {
     padding: 12px;
@@ -280,19 +280,16 @@ footer {
     font-size: 1rem;
 }
 
-/* Quando o usuário clica para digitar, a borda fica rosa */
+
 .form-group input:focus, 
 .form-group textarea:focus {
     outline: none;
     border-color: rgb(255, 190, 226);
 }
 
-/* Estilo para o botão de enviar mensagem */
+
 .contact-form .read-more {
-    cursor: pointer;
-    font-weight: 600;
-    transition: 0.3s;
-    width: fit-content; /* O botão só tem a largura do texto interno */
+    width: fit-content;
 }
 
 
@@ -301,7 +298,7 @@ footer {
     width: 100%;
 }
 
-/* Título com uma barra decorativa rosa ao lado */
+
 .specs-container h3 {
     margin-bottom: 1.5rem;
     border-left: 5px solid rgb(255, 190, 226);
@@ -310,9 +307,9 @@ footer {
 
 .specs-table {
     width: 100%;
-    border-collapse: collapse; /* Remove espaços duplos entre as bordas das células */
+    border-collapse: collapse;
     background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Sombra leve para dar profundidade */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .specs-table td {
@@ -321,16 +318,20 @@ footer {
     font-size: 0.95rem;
 }
 
-/* Efeito Zebra: Pinta as linhas pares de cinza claro para facilitar a leitura */
 .specs-table tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-/* Estiliza a primeira coluna para ser mais escura e forte */
 .specs-table td:first-child {
     font-weight: 500;
     color: #555;
     width: 50%;
+}
+
+#main-content-contact{
+    display: flex;
+    margin: 5rem auto;
+    gap: 4rem;
 }
 
 @media (max-width: 1024px) {
@@ -365,6 +366,9 @@ footer {
     #main-content{
         flex-direction: column;
     }
+    #main-content-contact{
+        flex-direction: column;
+    }
     .video iframe {
     aspect-ratio:  16 / 9;  
     }
@@ -373,5 +377,39 @@ footer {
     }
     #text{
         max-width: 80%;
+    }
+}
+
+@media (max-width: 550px) {
+    .article-card {
+        width: 100%;
+    }
+
+    #header {
+        padding: 1rem;
+    }
+
+    #main-menu {
+        width: 100%; 
+    }
+
+    #main-menu ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem; 
+        margin: 1rem 0;
+        padding: 0;
+        
+    }
+
+    #main-menu li {
+        display: flex;
+    }
+
+    #main-menu a {
+        width: 100%;
+        text-align: center;
+        padding: 0.6rem 0.2rem;
+        font-size: 0.9rem;
     }
 }
